@@ -1,10 +1,9 @@
-# 🧬 Prédiction des Profils ADMET par Apprentissage Automatique
+# 🧬 Prédiction des Propriétés ADMET pour l’Optimisation de Candidats Médicamenteux
 
 ## 📌 Contexte
 
 Un médicament efficace ne se limite pas seulement à sa capacité d'interagir avec une cible biologique spécifique ; ses propriétés ADMET (Absorption, Distribution, Métabolisme, Excrétion, Toxicité) sont cruciales pour déterminer sa sécurité et son efficacité réelle chez les patients. Cependant, l'évaluation expérimentale de ces propriétés est coûteuse et chronophage.
 
-L'apprentissage automatique offre une solution prometteuse en permettant de prédire ces propriétés rapidement et efficacement, accélérant ainsi la découverte de nouveaux médicaments tout en réduisant les coûts et les risques associés.
 
 ## 🎯 Objectif du Projet
 
@@ -13,8 +12,6 @@ Ce projet vise à développer un modèle de classification multi-étiquettes sup
 Les prédictions réalisées permettront d'identifier rapidement des candidats-médicaments possédant des profils ADMET favorables.
 
 ## 📂 Description des Données
-
-Vous disposez de cinq fichiers principaux :
 
 * `X_train.csv` : 1940 molécules avec leurs identifiants uniques et représentations SMILES.
 * `y_train.csv` : Étiquettes ADMET pour chaque molécule d'entraînement.
@@ -32,10 +29,9 @@ Vous disposez de cinq fichiers principaux :
 | `Y2`     | Étiquette pour la propriété ADMET 2           |
 | `Y3`     | Étiquette pour la propriété ADMET 3           |
 
+## 📁 Structure du projet
 
-### Structure du projet :
-
-
+```
 Projet_ADMET/
 ├── data/
 │   ├── raw/                 # Données brutes (X_train.csv, X_test.csv, y_train.csv)
@@ -60,14 +56,20 @@ Projet_ADMET/
 │   └── assets/                  # Images, logos, fichiers statiques
 │
 ├── models/                      # Modèles sauvegardés (.pkl, .joblib)
-│
 ├── submissions/                 # Fichiers de prédiction au format d’envoi
-│
 ├── reports/                     # Graphiques, métriques, logs, courbes d'apprentissage
-│
 ├── requirements.txt             # Dépendances (inclure streamlit, rdkit, scikit-learn, etc.)
 ├── README.md                    # Présentation du projet
 └── .gitignore                   # Fichiers à exclure du contrôle de version
+```
+
+## 🔧 Technologies utilisées
+
+* Python (Pandas, NumPy, scikit-learn)
+* RDKit (manipulation des SMILES, empreintes moléculaires)
+* Streamlit (visualisation interactive)
+* Jupyter Notebooks (expérimentation)
+* Git (versioning)
 
 ## 🛠️ Méthodologie
 
@@ -99,11 +101,11 @@ $$
 F1_{micro} = 2 \times \frac{Precision_{micro} \times Recall_{micro}}{Precision_{micro} + Recall_{micro}}
 $$
 
-
 ## 🚀 Soumission des Résultats
 
 Vos prédictions doivent être soumises au format du fichier `random_submission_example.csv`.
 
 ## 🧑‍💻 Contributeurs
 
-Oumar Abdramane ALLAWAN
+**Oumar Abdramane ALLAWAN**
+
