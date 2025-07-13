@@ -32,6 +32,42 @@ Vous disposez de cinq fichiers principaux :
 | `Y2`     | Étiquette pour la propriété ADMET 2           |
 | `Y3`     | Étiquette pour la propriété ADMET 3           |
 
+
+## Structure du projet 
+
+Projet_ADMET/
+├── data/
+│   ├── raw/                 # Données brutes (X_train.csv, X_test.csv, y_train.csv)
+│   └── processed/           # Données nettoyées ou vectorisées
+│
+├── notebooks/
+│   ├── exploration.ipynb        # Analyse exploratoire initiale
+│   ├── preprocessing.ipynb      # Transformation des SMILES, nettoyage, empreintes
+│   ├── baseline_model.ipynb     # Modèle de référence
+│   ├── modeling.ipynb           # Optimisation des modèles
+│   └── evaluation.ipynb         # Évaluation et analyse des résultats
+│
+├── scripts/
+│   ├── preprocess.py            # Prétraitement et vectorisation
+│   ├── train.py                 # Entraînement des modèles
+│   ├── predict.py               # Prédictions sur les données de test
+│   └── utils.py                 # Fonctions utilitaires communes
+│
+├── app/
+│   ├── streamlit_app.py         # Application Streamlit principale
+│   ├── components/              # Composants personnalisés (visualisation moléculaire, sliders, etc.)
+│   └── assets/                  # Images, logos, fichiers statiques
+│
+├── models/                      # Modèles sauvegardés (.pkl, .joblib)
+│
+├── submissions/                 # Fichiers de prédiction au format d’envoi
+│
+├── reports/                     # Graphiques, métriques, logs, courbes d'apprentissage
+│
+├── requirements.txt             # Dépendances (inclure streamlit, rdkit, scikit-learn, etc.)
+├── README.md                    # Présentation du projet
+└── .gitignore                   # Fichiers à exclure du contrôle de version
+
 ## 🛠️ Méthodologie
 
 1. **Prétraitement des données** :
