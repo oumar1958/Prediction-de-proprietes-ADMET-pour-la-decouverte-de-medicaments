@@ -62,9 +62,6 @@ $$
 F1_{micro} = 2 \times \frac{Precision_{micro} \times Recall_{micro}}{Precision_{micro} + Recall_{micro}}
 $$
 
-## 🔍 Benchmark
-
-Un modèle de référence a été créé en utilisant des empreintes de Morgan et un arbre de décision (paramètres par défaut de scikit-learn). Vous pouvez reproduire ce benchmark avec le notebook introductif fourni.
 
 ## 🚀 Soumission des Résultats
 
