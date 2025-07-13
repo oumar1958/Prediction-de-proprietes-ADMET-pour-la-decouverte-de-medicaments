@@ -33,7 +33,8 @@ Vous disposez de cinq fichiers principaux :
 | `Y3`     | Étiquette pour la propriété ADMET 3           |
 
 
-### Structure du projet 
+### Structure du projet :
+
 
 Projet_ADMET/
 ├── data/
